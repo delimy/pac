@@ -20,7 +20,7 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else {
         //return proxy;
-        return "PROXY 10.0.1.10:8888";
+        //return "PROXY 10.0.1.10:8888";
         return "DIRECT";
     }
 }
