@@ -11,9 +11,9 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else if (shExpMatch(url, "http://vv.video.qq.com/*")) {
         return proxy;
-    } else if (shExpMatch(url, "http://m.sjzhushou.com/*")) {
+    } else if (shExpMatch(host, "m.sjzhushou.com")) {
         return proxy;
-    } else if (shExpMatch(url, "http://*.xunlei.com/*")) {
+    } else if (shExpMatch(host, "i.play.api.3g.youku.com")) {
         return proxy;
     } else if (shExpMatch(url, "http://www.tudou.com/albumplay/*")) {
         return proxy;
