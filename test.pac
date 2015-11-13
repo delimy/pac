@@ -4,7 +4,9 @@ function FindProxyForURL(url, host) {
     var res = pattern.exec(uri);
     var proxy = "PROXY " + res[1] + ":" + res[2];
     //return "PROXY 10.0.1.10:8888";
-    if (shExpMatch(host, "aapi.tv.sohu.com")) {
+    if (shExpMatch(host, "api.tv.sohu.com")) {
+        return proxy;
+    } else if (shExpMatch(host, "hot.vrs.sohu.com")) {
         return proxy;
     } else if (shExpMatch(url, "http://data.video.qiyi.com/*")) {
         return proxy;
