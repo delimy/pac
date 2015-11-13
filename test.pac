@@ -13,7 +13,9 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else if (shExpMatch(host, "m.sjzhushou.com")) {
         return proxy;
-    } else if (shExpMatch(host, "i.play.api.3g.youku.com")) {
+    } else if (shExpMatch(host, "*.api.3g.youku.com")) {
+        return proxy;
+    } else if (shExpMatch(host, "api.mobile.youku.com")) {
         return proxy;
     } else if (shExpMatch(url, "http://www.tudou.com/albumplay/*")) {
         return proxy;
