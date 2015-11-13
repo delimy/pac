@@ -20,6 +20,7 @@ function FindProxyForURL(url, host) {
     } else if (shExpMatch(url, "http://www.tudou.com/albumplay/*")) {
         return proxy;
     } else {
-        return "PROXY 10.0.1.10:8888";
+        //return "PROXY 10.0.1.10:8888";
+        return "DIRECT";
     }
 }
