@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else if (shExpMatch(host, "hot.vrs.sohu.com")) {
         return proxy;
-    } else if (shExpMatch(host, "ifac*.iqiyi.com")) {
+    } else if (shExpMatch(url, "http://*.iqiyi.com/*")) {
         return proxy;
     } else if (shExpMatch(url, "http://vv.video.qq.com/*")) {
         return proxy;
@@ -19,7 +19,7 @@ function FindProxyForURL(url, host) {
     } else if (shExpMatch(url, "http://www.tudou.com/albumplay/*")) {
         return proxy;
     } else {
-        return proxy;
+        //return proxy;
         return "PROXY 10.0.1.10:8888";
         return "DIRECT";
     }
