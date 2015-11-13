@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else if (shExpMatch(host, "hot.vrs.sohu.com")) {
         return proxy;
-    } else if (shExpMatch(url, "http://data.video.qiyi.com/*")) {
+    } else if (shExpMatch(host, "iface2.iqiyi.com")) {
         return proxy;
     } else if (shExpMatch(url, "http://vv.video.qq.com/*")) {
         return proxy;
