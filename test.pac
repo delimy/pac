@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-    var uri = "/218.92.227.170/17183/video.pac";
+    var uri = "/61.162.184.14/8088/video.pac";
     var pattern = /([0-9.]+)\/([0-9]+)/;
     var res = pattern.exec(uri);
     var proxy = "PROXY " + res[1] + ":" + res[2];
