@@ -3,10 +3,8 @@ function FindProxyForURL(url, host) {
     var pattern = /([0-9.]+)\/([0-9]+)/;
     var res = pattern.exec(uri);
     var proxy = "PROXY " + res[1] + ":" + res[2];
-    return "PROXY 10.0.1.10:8888";
-    if (shExpMatch(url, "http://v.youku.com/player/get*")) {
-        return proxy;
-    } else if (shExpMatch(url, "http://hot.vrs.sohu.com/*")) {
+    //return "PROXY 10.0.1.10:8888";
+    if (shExpMatch(url, "http://hot.vrs.sohu.com/*")) {
         return proxy;
     } else if (shExpMatch(url, "http://data.video.qiyi.com/*")) {
         return proxy;
@@ -14,14 +12,12 @@ function FindProxyForURL(url, host) {
         return proxy;
     } else if (shExpMatch(host, "m.sjzhushou.com")) {
         return proxy;
-    } else if (shExpMatch(host, "*.api.3g.youku.com")) {
-        return proxy;
-    } else if (shExpMatch(host, "api.mobile.youku.com")) {
+    } else if (shExpMatch(host, "i.play.api.3g.youku.com")) {
         return proxy;
     } else if (shExpMatch(url, "http://www.tudou.com/albumplay/*")) {
         return proxy;
     } else {
-        //return "PROXY 10.0.1.10:8888";
+        return "PROXY 10.0.1.10:8888";
         return "DIRECT";
     }
 }
