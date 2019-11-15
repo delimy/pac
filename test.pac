@@ -1,3 +1,7 @@
 function FindProxyForURL(url, host) {
-    return "PROXY 172.29.25.59:12345";
+    if (shExpMatch(url, "https://raw.githubusercontent.com/*")) {
+        return "PROXY 127.0.0.1:8080; DIRECT";
+    } else {
+        return "DIRECT";
+    }
 }
